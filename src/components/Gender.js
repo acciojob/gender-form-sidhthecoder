@@ -20,10 +20,10 @@ function Gender() {
 
             <input type="radio" id="female" name="gender" value="Female" checked={gender === 'Female'} onChange={handleGenderChange} />
             <label htmlFor="female">Female</label>
-            <h2>Select your dress size:</h2>
 
             {gender === "Male" &&(
                 <div>
+                    <h2>Select your shirt size:</h2>
                     <label htmlFor="shirt-size">Shirt Size:</label>
                     <select id="shirt-size" value={shirtSize} onChange={handleShirtSizeChange}>
                         <option value="">Select size</option>
@@ -36,6 +36,7 @@ function Gender() {
 
             {gender === "Female" && (
                 <div>
+                <h2>Select your dress size:</h2>
                 <label htmlFor="shirt-size">Shirt Size:</label>
                 <select id="shirt-size" value={shirtSize} onChange={handleShirtSizeChange}>
                     <option value="">Select size</option>
